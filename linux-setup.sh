@@ -12,7 +12,9 @@ sudo apt-get install -y libatlas-base-dev gfortran
 
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
-sudo apt-get install python3.6
+sudo apt-get install -y python3.6
+
+sudo apt-get install -y clang
 
 # java
 sudo apt-get install -y openjdk-8-jre
