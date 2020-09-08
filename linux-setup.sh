@@ -10,6 +10,10 @@ sudo apt-get install -y libv4l-dev v4l-utils
 sudo modprobe bcm2835-v4l2
 sudo apt-get install -y libatlas-base-dev gfortran
 
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.6
+
 # java
 sudo apt-get install -y openjdk-8-jre
 sudo apt-get install -y openjdk-11-jre
@@ -18,4 +22,21 @@ sudo apt-get install -y openjdk-11-jre
 sudo wget -qO - https://github.com/CJBuchel/CJ-Vision/blob/2.0/bootstrap/openCV.sh?raw=1 | bash
 
 
-# discord
+sudo apt-get install -y gdebi
+
+# howdy (windows hello look alike)
+sudo add-apt-repository ppa:boltgolt/howdy
+sudo apt update
+sudo apt install -y howdy
+
+# razer (RAZER ONLY)
+sudo apt install -y software-properties-gtk
+sudo add-apt-repository ppa:openrazer/stable
+sudo apt update
+sudo apt install openrazer-meta
+
+sudo add-apt-repository ppa:polychromatic/stable
+sudo apt update
+sudo apt install polychromatic
+
+
