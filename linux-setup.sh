@@ -20,9 +20,17 @@ sudo apt-get install -y clang
 sudo apt-get install -y openjdk-8-jre
 sudo apt-get install -y openjdk-11-jre
 
+# gradle
+sudo apt -y install vim apt-transport-https dirmngr wget software-properties-common
+sudo add-apt-repository ppa:cwchien/gradle
+
+sudo apt-get update
+sudo apt -y install gradle
+
+gradle -v
+
 # opencv
 sudo wget -qO - https://github.com/CJBuchel/CJ-Vision/blob/2.0/bootstrap/openCV.sh?raw=1 | bash
-
 
 sudo apt-get install -y gdebi
 
