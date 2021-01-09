@@ -16,16 +16,22 @@ sudo apt-get install -y python3.6
 
 sudo apt-get install -y clang
 
+# git
+sudo apt-get install git
+
 # java
 sudo apt-get install -y openjdk-8-jre
 sudo apt-get install -y openjdk-11-jre
 
-# gradle
-sudo apt -y install vim apt-transport-https dirmngr wget software-properties-common
-sudo add-apt-repository ppa:cwchien/gradle
+# curl
+sudo apt-get install -y curl
 
-sudo apt-get update
-sudo apt -y install gradle
+# sdkman
+curl -s "https://get.sdkman.io" | bash
+source "/home/cj/.sdkman/bin/sdkman-init.sh"
+
+# gradle
+sdk install gradle 6.8
 
 gradle -v
 
