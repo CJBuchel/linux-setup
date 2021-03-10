@@ -1,4 +1,4 @@
-#!/bin.sh
+#!/bin/sh
 
 # gradle
 sdk install gradle 6.8
