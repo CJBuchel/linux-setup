@@ -1,6 +1,6 @@
 #!/bin.sh
 
-sudo apt-get install git
+sudo apt-get install -y git
 sudo apt-get update
 
 cd ~/
@@ -16,7 +16,7 @@ echo "Installing libs"
 sudo apt-get update
 
 # packages
-sudo apt install software-properties-common apt-transport-https wget
+sudo apt install -y software-properties-common apt-transport-https wget
 sudo apt-get install -y avahi-daemon libnss-mdns v4l-utils imagemagick
 sudo apt-get install -y build-essential cmake cmake-curses-gui pkg-config
 sudo apt-get install -y libjpeg-dev libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libeigen3-dev libxvidcore-dev libx264-dev libgtk2.0-dev
@@ -40,7 +40,7 @@ sudo apt-get install -y openjdk-11-jre
 sudo apt-get install -y curl
 
 # snapd
-sudo apt-get install snapd
+sudo apt-get install -y snapd
 
 # sdkman
 curl -s "https://get.sdkman.io" | bash
