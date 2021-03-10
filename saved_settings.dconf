@@ -19,15 +19,21 @@ migrated=true
 [org/gnome/desktop/background]
 picture-uri='file:///home/cj/Pictures/neon-background.jpg'
 
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'au')]
 xkb-options=@as []
 
 [org/gnome/desktop/interface]
+clock-show-seconds=true
+clock-show-weekday=true
 cursor-theme='DMZ-Black'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Flat-Remix-GTK-Blue-Darkest-NoBorder'
 icon-theme='Flat-Remix-Blue-Dark'
+show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
@@ -51,6 +57,9 @@ picture-uri='file:///usr/share/backgrounds/neon-background.jpg'
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=false
 theme-name='Yaru'
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
 
 [org/gnome/evolution-data-server]
 migrated=true
