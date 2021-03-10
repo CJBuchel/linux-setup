@@ -1,13 +1,5 @@
 #!/bin.sh
 
-sudo apt-get install -y git
-sudo apt-get update
-
-cd ~/
-sudo git clone https://github.com/CJBuchel/linux-setup.git
-cd ./linux-setup
-
-
 # Basic libs
 read -p "Install basic libs [y/n]: " libs
 if [ "$libs" = "y" ]
