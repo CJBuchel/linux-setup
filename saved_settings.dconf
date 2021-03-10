@@ -45,6 +45,9 @@ application-id='update-manager.desktop'
 [org/gnome/desktop/privacy]
 report-technical-problems=true
 
+[org/gnome/desktop/screensaver]
+picture-uri='file:///usr/share/backgrounds/neon-background.jpg'
+
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=false
 theme-name='Yaru'
@@ -124,5 +127,5 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(358, 68)
+window-position=(358, 52)
 window-size=(1203, 936)
