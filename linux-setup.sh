@@ -75,3 +75,11 @@ fi
 
 echo "Linux setup complete. Use 'sudo howdy add cj' to add face"
 echo "You might also need to switch to flat-remix in login screen"
+
+read -p "Reboot now [y/n]: " reboot
+if [ "$reboot" = "y" ]
+then
+sudo reboot
+else
+echo "Please reboot later and login using flat-remix"
+fi
