@@ -1,8 +1,22 @@
 #!/bin.sh
 
+sudo apt-get install git
+sudo apt-get update
+
+cd ~/
+sudo git clone https://github.com/CJBuchel/linux-setup.git
+cd ./linux-setup
+
+
+# Basic libs
+read -p "Install basic libs [y/n]: " libs
+if [ "$libs" = "y" ]
+then
+echo "Installing libs"
 sudo apt-get update
 
 # packages
+sudo apt install software-properties-common apt-transport-https wget
 sudo apt-get install -y avahi-daemon libnss-mdns v4l-utils imagemagick
 sudo apt-get install -y build-essential cmake cmake-curses-gui pkg-config
 sudo apt-get install -y libjpeg-dev libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libeigen3-dev libxvidcore-dev libx264-dev libgtk2.0-dev
@@ -16,9 +30,6 @@ sudo apt-get install -y python3.6
 
 sudo apt-get install -y clang
 
-# git
-sudo apt-get install git
-
 # java
 sudo apt-get install -y openjdk-8-jre
 sudo apt-get install -y openjdk-11-jre
@@ -26,33 +37,36 @@ sudo apt-get install -y openjdk-11-jre
 # curl
 sudo apt-get install -y curl
 
+# snapd
+sudo apt-get install snapd
+
 # sdkman
 curl -s "https://get.sdkman.io" | bash
 source "/home/cj/.sdkman/bin/sdkman-init.sh"
-
-# gradle
-sdk install gradle 6.8
-
-gradle -v
-
-# opencv
-sudo wget -qO - https://github.com/CJBuchel/CJ-Vision/blob/2.0/bootstrap/openCV.sh?raw=1 | bash
-
-sudo apt-get install -y gdebi
-
-# howdy (windows hello look alike)
-sudo add-apt-repository ppa:boltgolt/howdy
-sudo apt update
-sudo apt install -y howdy
-
-# razer (RAZER ONLY)
-sudo apt install -y software-properties-gtk
-sudo add-apt-repository ppa:openrazer/stable
-sudo apt update
-sudo apt install openrazer-meta
-
-sudo add-apt-repository ppa:polychromatic/stable
-sudo apt update
-sudo apt install polychromatic
+else
+echo "Not installing basic libs"
+fi
 
 
+# Ubuntu Bootstrap
+read -p "Using ubuntu [y/n]: " usingUbuntu
+if [ "$usingUbuntu" = "y" ]
+then
+echo "Using Ubuntu"
+sudo chmod +x ubuntu-bootstrap.sh
+sudo ./ubuntu-bootstrap.sh
+else
+echo "Not using Ubuntu"
+fi
+
+
+# Vendor installs
+read -p "Install vendor libraries and dev software? (vscode, chrome, ruby on rails etc...) [y/n]: " vendors
+if [ "$vendors" = "y" ]
+then
+echo "Installing Vendors"
+sudo chmod +x vendor-downloads.sh
+sudo ./vendor-downloads.sh
+else
+echo "Not installing vendors"
+fi
