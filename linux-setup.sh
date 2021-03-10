@@ -23,8 +23,10 @@ sudo apt-get install -y libjpeg-dev libtiff5-dev libjasper-dev libavcodec-dev li
 sudo apt-get install -y libv4l-dev v4l-utils
 sudo modprobe bcm2835-v4l2
 sudo apt-get install -y libatlas-base-dev gfortran
+sudo apt-get install -y net-tools
+sudo apt-get install -y vim
 
-sudo add-apt-repository ppa:deadsnakes/ppa
+sudo add-apt-repository --force-yes ppa:deadsnakes/ppa
 sudo apt-get update
 sudo apt-get install -y python3.6
 
@@ -70,3 +72,6 @@ sudo ./vendor-downloads.sh
 else
 echo "Not installing vendors"
 fi
+
+echo "Linux setup complete. Use 'sudo howdy add cj' to add face"
+echo "You might also need to switch to flat-remix in login screen"
