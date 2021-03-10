@@ -44,7 +44,7 @@ bundle -v
 # Bundler version 2.0
 
 echo "Installing mysql"
-sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+sudo apt-get install -y mysql-server mysql-client libmysqlclient-dev
 
 
 
@@ -86,7 +86,7 @@ sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt update
-sudo apt install code
+sudo apt install -y code
 
 echo "Upgrading apts"
 sudo apt upgrade
