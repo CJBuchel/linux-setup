@@ -1,4 +1,4 @@
-#!/bin.sh
+#!/bin/sh
 
 # gradle
 sdk install gradle 6.8
@@ -11,7 +11,7 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 # Adding Yarn repository
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo add-apt-repository -y --force-yes ppa:chris-lea/redis-server
+sudo add-apt-repository -y ppa:chris-lea/redis-server
 # Refresh our packages list with the new repositories
 sudo apt-get update
 # Install our dependencies for compiiling Ruby along with Node.js and Yarn
@@ -55,7 +55,7 @@ sudo wget -qO - https://github.com/CJBuchel/CJ-Vision/blob/2.0/bootstrap/openCV.
 sudo apt-get install -y gdebi
 
 # howdy (windows hello look alike)
-sudo add-apt-repository --force-yes ppa:boltgolt/howdy
+sudo add-apt-repository ppa:boltgolt/howdy
 sudo apt update
 sudo apt install -y howdy
 
@@ -65,11 +65,11 @@ then
 echo "Installing razer libs"
 # razer (RAZER ONLY)
 sudo apt install -y software-properties-gtk
-sudo add-apt-repository --force-yes ppa:openrazer/stable
+sudo add-apt-repository ppa:openrazer/stable
 sudo apt update
 sudo apt install -y openrazer-meta
 
-sudo add-apt-repository --force-yes ppa:polychromatic/stable
+sudo add-apt-repository ppa:polychromatic/stable
 sudo apt update
 sudo apt install -y polychromatic
 else

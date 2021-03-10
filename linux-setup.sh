@@ -1,4 +1,4 @@
-#!/bin.sh
+#!/bin/sh
 
 # Basic libs
 read -p "Install basic libs [y/n]: " libs
@@ -18,7 +18,7 @@ sudo apt-get install -y libatlas-base-dev gfortran
 sudo apt-get install -y net-tools
 sudo apt-get install -y vim
 
-sudo add-apt-repository --force-yes ppa:deadsnakes/ppa
+sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
 sudo apt-get install -y python3.6
 

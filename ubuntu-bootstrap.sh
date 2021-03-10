@@ -1,4 +1,4 @@
-#!/bin.sh
+#!/bin/sh
 
 echo "Installing and configuring ubuntu"
 
@@ -8,7 +8,7 @@ sudo apt-get install -y gnome-tweak-tool
 sudo apt-get install -y gnome-shell-extensions
 
 echo "Installing flat remix theme"
-sudo add-apt-repository --force-yes ppa:daniruiz/flat-remix
+sudo add-apt-repository ppa:daniruiz/flat-remix
 sudo apt-get update
 sudo apt-get install -y flat-remix
 sudo apt-get install -y flat-remix-gtk
