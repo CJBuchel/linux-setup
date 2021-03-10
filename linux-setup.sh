@@ -1,4 +1,4 @@
-#!/bin.sh
+#!/bin/sh
 
 # Basic libs
 read -p "Install basic libs [y/n]: " libs
