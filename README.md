@@ -1,3 +1,3 @@
 # Linux setup
 
-### run: sudo wget -qO - https://github.com/CJBuchel/linux-setup/blob/master/linux-setup.sh?raw=1 | bash
+### Clone the project, then run `sudo chmod +x linux-setup.sh` then run `./linux-setup.sh`
