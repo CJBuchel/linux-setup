@@ -3,6 +3,9 @@ first-run=false
 launch-count=1
 launch-time=int64 1615385308
 
+[com/ubuntu/SoftwareProperties]
+goa-account-id='account_1615393844_0'
+
 [com/ubuntu/update-notifier]
 release-check-time=uint32 1615384866
 
@@ -12,6 +15,9 @@ prompt-check='2021-03-10T14:11:15+00'
 
 [org/gnome/deja-dup/file]
 migrated=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///home/cj/Pictures/neon-background.jpg'
 
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'au')]
@@ -27,6 +33,12 @@ toolkit-accessibility=false
 [org/gnome/desktop/notifications]
 application-children=['update-manager']
 
+[org/gnome/desktop/notifications/application/gnome-initial-setup]
+application-id='gnome-initial-setup.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-printers-panel]
+application-id='gnome-printers-panel.desktop'
+
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
 
@@ -35,7 +47,7 @@ report-technical-problems=true
 
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=false
-theme-name='freedesktop'
+theme-name='Yaru'
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -59,6 +71,14 @@ side-panel-size=200
 size=(900, 665)
 state=43908
 
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+maximized=false
+
 [org/gnome/settings-daemon/plugins/xsettings]
 antialiasing='grayscale'
 hinting='slight'
@@ -66,6 +86,7 @@ hinting='slight'
 [org/gnome/shell]
 disable-user-extensions=false
 enabled-extensions=['desktop-icons@csoriano', 'ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop']
 
 [org/gnome/system/location]
 enabled=false
@@ -91,3 +112,17 @@ visible-name='cj-terminal'
 [org/gtk/settings/color-chooser]
 custom-colors=[(0.16000000000000003, 0.41708185053380753, 1.0, 1.0), (0.0, 1.0, 0.0, 1.0), (0.54804270462633453, 1.0, 0.0, 1.0), (0.0, 0.39145907473309638, 1.0, 1.0), (0.0, 0.80392156862745101, 0.0, 1.0), (0.66666666666666663, 0.66666666666666663, 0.66666666666666663, 1.0)]
 selected-color=(true, 0.16000000000000003, 0.41708185053380753, 1.0, 1.0)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=168
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+window-position=(358, 68)
+window-size=(1203, 936)
