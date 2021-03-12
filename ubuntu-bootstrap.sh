@@ -14,18 +14,9 @@ sudo apt-get install -y flat-remix
 sudo apt-get install -y flat-remix-gtk
 sudo apt-get install -y flat-remix-gnome
 
-# Load visual config
-echo "Setting flat-remix themes"
+echo "Placing background in folder locations"
 sudo cp ./neon-background.jpg /usr/share/backgrounds/neon-background.jpg
-sudo cp ./icon.png ~/Pictures/icon.png
-dconf load / < saved_settings.dconf
-echo "Setting terminal theme"
-cat ./custom_bashrc > ~/.bashrc
-
-
-# BACKGROUND = "file:///home/$user/Pictures/neon-background.jpg"
-# gsettings set org.gnome.desktop.background picture-uri $BACKGROUND
-
+sudo cp ./icon.png /home/$user/Pictures/icon.png
 
 # driver auto installs
 echo "Installing drivers"

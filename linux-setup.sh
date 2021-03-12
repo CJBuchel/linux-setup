@@ -36,7 +36,7 @@ sudo apt-get install -y snapd
 
 # sdkman
 curl -s "https://get.sdkman.io" | bash
-source "/home/cj/.sdkman/bin/sdkman-init.sh"
+source "~/.sdkman/bin/sdkman-init.sh"
 else
 echo "Not installing basic libs"
 fi
@@ -51,27 +51,32 @@ sudo chmod +x ubuntu-bootstrap.sh
 sudo ./ubuntu-bootstrap.sh
 else
 echo "Not using Ubuntu"
+
+	# Vendor installs
+	read -p "Install vendor libraries and dev software? (vscode, chrome, ruby on rails etc...) [y/n]: " vendors
+	if [ "$vendors" = "y" ]
+	then
+	echo "Installing Vendors"
+	sudo chmod +x vendor-downloads.sh
+	sudo ./vendor-downloads.sh
+	else
+	echo "Not installing vendors"
+	fi
+
 fi
 
-
-# Vendor installs
-read -p "Install vendor libraries and dev software? (vscode, chrome, ruby on rails etc...) [y/n]: " vendors
-if [ "$vendors" = "y" ]
+if [ "$usingUbuntu" = "y" ]
 then
-echo "Installing Vendors"
-sudo chmod +x vendor-downloads.sh
-sudo ./vendor-downloads.sh
+sudo chmod +x linux-finalize.sh
+echo "Please reboot and login using flat-remix, then run 'linux-finalize.sh' to finish setup"
+read -p "Reboot now [y/n]: " reboot
 else
-echo "Not installing vendors"
+read -p "Reboot now [y/n]: " reboot
 fi
 
-echo "Linux setup complete. Use 'sudo howdy add cj' to add face"
-echo "You might also need to switch to flat-remix in login screen"
-
-read -p "Reboot now [y/n]: " reboot
 if [ "$reboot" = "y" ]
 then
 sudo reboot
 else
-echo "Please reboot later and login using flat-remix"
+echo "Please reboot later to finish setup"
 fi

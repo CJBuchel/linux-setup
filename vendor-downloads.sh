@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sudo apt update
+
 # gradle
 sdk install gradle 6.8
 
@@ -49,17 +51,24 @@ sudo apt-get install -y mysql-server mysql-client libmysqlclient-dev
 
 
 # opencv
+read -p "Install OpenCV?: [y/n]: " opencv
+if [ "$opencv" = "y" ]
+then
 echo "Getting OpenCV"
 sudo wget -qO - https://github.com/CJBuchel/CJ-Vision/blob/2.0/bootstrap/openCV.sh?raw=1 | bash
+fi
 
 sudo apt-get install -y gdebi
 
 # howdy (windows hello look alike)
+# config loc: /usr/lib/security/howdy/cli
 sudo add-apt-repository ppa:boltgolt/howdy
 sudo apt update
 sudo apt install -y howdy
 
-read -p "Using a razer laptop? [y/n]" razer
+sudo apt-get install -y rpl
+
+read -p "Using a razer laptop? [y/n]: " razer
 if [ "$razer" = "y" ]
 then
 echo "Installing razer libs"
@@ -72,8 +81,15 @@ sudo apt install -y openrazer-meta
 sudo add-apt-repository ppa:polychromatic/stable
 sudo apt update
 sudo apt install -y polychromatic
+
+sudo rpl -i -w "device_path = /dev/v4l/by-path/none" "device_path = /dev/video2" /usr/lib/security/howdy/config.ini
+
 else
 echo "Not installing razer"
+read -p "Webcam set for howdy dev/video0, dev/video1 etc.. [0/1/2/3...]: " videoNum
+
+sudo rpl -i -w "device_path = /dev/v4l/by-path/none" "device_path = /dev/video$videoNum" /usr/lib/security/howdy/config.ini
+
 fi
 
 # Chrome

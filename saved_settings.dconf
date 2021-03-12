@@ -9,6 +9,9 @@ goa-account-id='account_1615393844_0'
 [com/ubuntu/update-notifier]
 release-check-time=uint32 1615384866
 
+[org/gnome/control-center]
+last-panel='wifi'
+
 [org/gnome/deja-dup]
 backend='google'
 prompt-check='2021-03-10T14:11:15+00'
@@ -17,7 +20,7 @@ prompt-check='2021-03-10T14:11:15+00'
 migrated=true
 
 [org/gnome/desktop/background]
-picture-uri='file:///home/cj/Pictures/neon-background.jpg'
+picture-uri='file:///usr/share/backgrounds/neon-background.jpg'
 
 [org/gnome/desktop/calendar]
 show-weekdate=false
@@ -91,6 +94,10 @@ search-filter-time-type='last_modified'
 initial-size=(890, 550)
 maximized=false
 
+[org/gnome/nm-applet/eap/f17c19fd-50a9-4c9e-b447-8b8d8818dbcf]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
 [org/gnome/settings-daemon/plugins/xsettings]
 antialiasing='grayscale'
 hinting='slight'
@@ -131,10 +138,10 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=168
+sidebar-width=174
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(358, 52)
+window-position=(665, 34)
 window-size=(1203, 936)
