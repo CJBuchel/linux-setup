@@ -18,10 +18,12 @@ then
 
 # Load visual config
 echo "Setting flat-remix themes"
+
 dconf load / < saved_settings.dconf
 echo "Setting terminal theme"
 cat ./custom_bashrc > ~/.bashrc
 
+echo "Run `dconf load / < saved_settings.dconf` and `cat ./custom_bashrc > ~/.bashrc` to finish terminal setup"
 echo "Setup complete, run `sudo howdy add {name}` to add user face"
 
 else
