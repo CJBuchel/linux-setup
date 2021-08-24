@@ -20,6 +20,8 @@ sudo cat custom_bashrc > /home/cj/.bashrc
 echo "Adding face to howdy..."
 sudo howdy add
 
+sudo reboot
+
 else
 echo "Please boot into flat-remix then run again"
 fi
