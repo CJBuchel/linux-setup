@@ -5,26 +5,20 @@ read -p "Have you booted into flat-remix? [y/n]: " flat
 if [ "$flat" = "y" ]
 then
 
-	# Vendor installs
-	read -p "Install vendor libraries and dev software? (vscode, chrome, ruby on rails etc...) [y/n]: " vendors
-	if [ "$vendors" = "y" ]
-	then
-	echo "Installing Vendors"
-	sudo chmod +x vendor-downloads.sh
-	sudo ./vendor-downloads.sh
-	else
-	echo "Not installing vendors"
-	fi
+read -p "enter username e.g [cj]: " user
 
 # Load visual config
 echo "Setting flat-remix themes"
 
-dconf load / < saved_settings.dconf
+sudo dconf load / < saved_settings.dconf
 echo "Setting terminal theme"
-cat ./custom_bashrc > ~/.bashrc
+sudo cat custom_bashrc > /home/cj/.bashrc
 
-echo "Run `dconf load / < saved_settings.dconf` and `cat ./custom_bashrc > ~/.bashrc` to finish terminal setup"
-echo "Setup complete, run `sudo howdy add {name}` to add user face"
+# echo "Run `dconf load / < saved_settings.dconf` and `cat ./custom_bashrc > ~/.bashrc` to finish terminal setup"
+# echo "Setup complete, run `sudo howdy add {name}` to add user face"
+
+echo "Adding face to howdy..."
+# sudo howdy add
 
 else
 echo "Please boot into flat-remix then run again"
