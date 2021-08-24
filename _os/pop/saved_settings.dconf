@@ -18,7 +18,7 @@ release-check-time=uint32 1615384866
 last-refresh-time=int64 1629815693
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='background'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -57,7 +57,7 @@ xkb-options=@as []
 [org/gnome/desktop/interface]
 clock-show-seconds=true
 clock-show-weekday=true
-cursor-theme='DMZ-Black'
+cursor-theme='Pop'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Flat-Remix-GTK-Blue-Darkest-NoBorder'
 icon-theme='Flat-Remix-Blue-Dark'
@@ -139,6 +139,7 @@ hinting='slight'
 
 [org/gnome/shell]
 disable-user-extensions=false
+disabled-extensions=@as []
 enabled-extensions=['desktop-icons@csoriano', 'ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'pop-cosmic@system76.com']
 favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop']
 
@@ -152,6 +153,9 @@ gap-inner=uint32 1
 gap-outer=uint32 1
 hint-color-rgba='rgb(255,0,0)'
 tile-by-default=true
+
+[org/gnome/shell/extensions/user-theme]
+name='Flat-Remix-Blue-Darkest'
 
 [org/gnome/system/location]
 enabled=false
@@ -175,8 +179,8 @@ use-transparent-background=true
 visible-name='cj-terminal'
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(1.0, 0.0, 0.0, 1.0), (0.0, 0.34901960784313724, 1.0, 1.0), (0.0, 0.3487544483985765, 1.0, 1.0), (0.98431372549019602, 0.72156862745098038, 0.42352941176470588, 1.0), (0.16000000000000003, 0.41708185053380753, 1.0, 1.0), (0.0, 1.0, 0.0, 1.0), (0.54804270462633453, 1.0, 0.0, 1.0), (0.0, 0.39145907473309638, 1.0, 1.0)]
-selected-color=(true, 1.0, 0.0, 0.0, 1.0)
+custom-colors=[(0.16000000000000003, 0.41708185053380753, 1.0, 1.0), (0.0, 1.0, 0.0, 1.0), (0.54804270462633453, 1.0, 0.0, 1.0), (0.0, 0.39145907473309638, 1.0, 1.0), (0.0, 0.80392156862745101, 0.0, 1.0), (0.66666666666666663, 0.66666666666666663, 0.66666666666666663, 1.0)]
+selected-color=(true, 0.16000000000000003, 0.41708185053380753, 1.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -189,5 +193,5 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(665, 34)
+window-position=(694, 75)
 window-size=(1203, 936)
