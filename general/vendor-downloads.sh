@@ -2,6 +2,11 @@
 
 sudo apt update
 
+# sdkman
+curl -s "https://get.sdkman.io" | bash
+sudo chmod +x /home/$1/.sdkman/bin/sdkman-init.sh
+source "/home/$1/.sdkman/bin/sdkman-init.sh"
+
 # gradle
 sdk install gradle 6.8
 

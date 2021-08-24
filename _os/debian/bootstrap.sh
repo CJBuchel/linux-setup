@@ -1,7 +1,6 @@
 #!/bin/sh
 
 echo "Installing and configuring os..."
-read -p "Enter username e.g [cj]: " user
 
 # gnome tweaks
 sudo apt-get install -y gnome-tweak-tool
@@ -18,6 +17,6 @@ sudo apt-get install -y sl
 
 echo "Setting background images"
 sudo cp ./general/neon-background.jpg /usr/share/backgrounds/neon-background.jpg
-sudo cp ./general/icon.png /home/$user/Pictures/icon.png
+sudo cp ./general/icon.png /home/$1/Pictures/icon.png
 
-echo "Added cj icon to /home/$user/Pictures/icon.png. Set manually..."
+echo "Added cj icon to /home/$1/Pictures/icon.png. Set manually..."

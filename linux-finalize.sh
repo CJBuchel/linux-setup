@@ -18,7 +18,7 @@ sudo cat custom_bashrc > /home/cj/.bashrc
 # echo "Setup complete, run `sudo howdy add {name}` to add user face"
 
 echo "Adding face to howdy..."
-# sudo howdy add
+sudo howdy add
 
 else
 echo "Please boot into flat-remix then run again"

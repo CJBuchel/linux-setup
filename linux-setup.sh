@@ -7,6 +7,7 @@ read -p "Install dev lib vendors (gradle/rails etc...) [y/n]: " vendors
 read -p "Install openCV? [y/n]: " cv
 read -p "Using razer laptop [y/n]: " razer
 read -p "Howdy? [y/n]: " howdy
+read -p "Enter username e.g [cj]: " user
 
 
 if [ "$libs" = "y" ]
@@ -49,16 +50,13 @@ sudo apt-get install -y curl
 # snapd
 sudo apt-get install -y snapd
 
-# sdkman
-curl -s "https://get.sdkman.io" | bash
-source "~/.sdkman/bin/sdkman-init.sh"
 
 # Vendor downloads
 if [ "$vendors" = "y" ]
 then
 	echo "Installing vendors"
 	sudo chmod +x ./general/vendor-downloads.sh
-	sudo ./general/vendor-downloads.sh
+	sudo ./general/vendor-downloads.sh $user
 else
 	echo "Not installing vendors"
 fi
