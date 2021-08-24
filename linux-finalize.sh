@@ -10,6 +10,8 @@ read -p "enter username e.g [cj]: " user
 # Load visual config
 echo "Setting flat-remix themes"
 
+
+
 dconf load / < saved_settings.dconf
 echo "Setting terminal theme"
 cat custom_bashrc > /home/$user/.bashrc
@@ -20,7 +22,10 @@ cat custom_bashrc > /home/$user/.bashrc
 echo "Adding face to howdy..."
 sudo howdy add
 
-sudo reboot
+rm -r saved_settings.dconf
+rm -r custom_bashrc
+
+# sudo reboot
 
 else
 echo "Please boot into flat-remix then run again"

@@ -108,14 +108,14 @@ fi
 if [ "$os" = "u" ]
 then
 	sudo ubuntu-drivers autoinstall
-	sudo chmod +x ./_os/debian/bootstrap.sh
-	sudo ./_os/debian/bootstrap.sh
+	sudo chmod +x ./_os/ubuntu/bootstrap.sh
+	sudo ./_os/ubuntu/bootstrap.sh
 fi
 
 if [ "$os" = "p" ]
 then
-	sudo chmod +x ./_os/debian/bootstrap.sh
-	sudo ./_os/debian/bootstrap.sh
+	sudo chmod +x ./_os/pop/bootstrap.sh
+	sudo ./_os/pop/bootstrap.sh
 fi
 
 # Finalize and upgrade
