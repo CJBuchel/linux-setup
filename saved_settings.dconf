@@ -1,0 +1,197 @@
+[apps/update-manager]
+first-run=false
+launch-count=1
+launch-time=int64 1615385308
+
+[com/github/donadigo/eddy]
+mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
+window-x=100
+window-y=127
+
+[com/ubuntu/SoftwareProperties]
+goa-account-id='account_1615393844_0'
+
+[com/ubuntu/update-notifier]
+release-check-time=uint32 1615384866
+
+[io/elementary/appcenter/settings]
+last-refresh-time=int64 1629815693
+
+[org/gnome/control-center]
+last-panel='background'
+
+[org/gnome/deja-dup]
+backend='google'
+prompt-check='2021-03-10T14:11:15+00'
+
+[org/gnome/deja-dup/file]
+migrated=true
+
+[org/gnome/desktop/app-folders/folders/Pop-Office]
+apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
+name='Office'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Pop-System]
+apps=['gnome-language-selector.desktop', 'gnome-session-properties.desktop', 'gnome-system-monitor.desktop', 'im-config.desktop', 'nm-connection-editor.desktop', 'nvidia-settings.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.PowerStats.desktop', 'org.gnome.seahorse.Application.desktop', 'software-properties-gnome.desktop', 'system76-driver.desktop', 'system76-firmware.desktop']
+name='System'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Pop-Utility]
+apps=['com.github.donadigo.eddy.desktop', 'com.system76.Popsicle.desktop', 'gucharmap.desktop', 'info.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Totem.desktop', 'pop-cosmic-applications.desktop', 'pop-cosmic-launcher.desktop', 'pop-cosmic-workspaces.desktop', 'simple-scan.desktop', 'yelp.desktop']
+name='Utilities'
+translate=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/neon-background.jpg'
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+per-window=false
+sources=[('xkb', 'au')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+clock-show-seconds=true
+clock-show-weekday=true
+cursor-theme='Pop'
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Flat-Remix-GTK-Blue-Darkest-NoBorder'
+icon-theme='Flat-Remix-Blue-Dark'
+show-battery-percentage=true
+toolkit-accessibility=false
+
+[org/gnome/desktop/notifications]
+application-children=['update-manager']
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-initial-setup]
+application-id='gnome-initial-setup.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-printers-panel]
+application-id='gnome-printers-panel.desktop'
+
+[org/gnome/desktop/notifications/application/io-elementary-appcenter]
+application-id='io.elementary.appcenter.desktop'
+
+[org/gnome/desktop/notifications/application/update-manager]
+application-id='update-manager.desktop'
+
+[org/gnome/desktop/peripherals/touchpad]
+disable-while-typing=false
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+report-technical-problems=true
+
+[org/gnome/desktop/screensaver]
+picture-uri='file:///usr/share/backgrounds/neon-background.jpg'
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=false
+theme-name='Yaru'
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/gedit/plugins]
+active-plugins=['spell', 'docinfo', 'modelines', 'filebrowser', 'time']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/cj'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(900, 665)
+state=43908
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+maximized=false
+
+[org/gnome/nm-applet/eap/f17c19fd-50a9-4c9e-b447-8b8d8818dbcf]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/settings-daemon/plugins/xsettings]
+antialiasing='grayscale'
+hinting='slight'
+
+[org/gnome/shell]
+disable-user-extensions=false
+disabled-extensions=@as []
+enabled-extensions=['desktop-icons@csoriano', 'ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'pop-cosmic@system76.com']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop']
+
+[org/gnome/shell/extensions/dash-to-dock]
+extend-height=false
+manualhide=false
+
+[org/gnome/shell/extensions/pop-shell]
+active-hint=true
+gap-inner=uint32 1
+gap-outer=uint32 1
+hint-color-rgba='rgb(255,0,0)'
+tile-by-default=true
+
+[org/gnome/shell/extensions/user-theme]
+name='Flat-Remix-Blue-Darkest'
+
+[org/gnome/system/location]
+enabled=false
+
+[org/gnome/terminal/legacy]
+theme-variant='system'
+
+[org/gnome/terminal/legacy/profiles:]
+default='b6be5671-71e7-46e0-825b-709280900d2a'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'b6be5671-71e7-46e0-825b-709280900d2a']
+
+[org/gnome/terminal/legacy/profiles:/:b6be5671-71e7-46e0-825b-709280900d2a]
+background-color='rgb(0,43,54)'
+background-transparency-percent=40
+bold-is-bright=true
+foreground-color='rgb(131,148,150)'
+palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,238)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+use-theme-colors=true
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='cj-terminal'
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.16000000000000003, 0.41708185053380753, 1.0, 1.0), (0.0, 1.0, 0.0, 1.0), (0.54804270462633453, 1.0, 0.0, 1.0), (0.0, 0.39145907473309638, 1.0, 1.0), (0.0, 0.80392156862745101, 0.0, 1.0), (0.66666666666666663, 0.66666666666666663, 0.66666666666666663, 1.0)]
+selected-color=(true, 0.16000000000000003, 0.41708185053380753, 1.0, 1.0)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=174
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+window-position=(694, 75)
+window-size=(1203, 936)

@@ -16,10 +16,10 @@ sudo apt-get install -y flat-remix-gnome
 sudo apt-get install -y sl
 
 echo "Setting background images"
-sudo cp ../../general/neon-background.jpg /usr/share/backgrounds/neon-background.jpg
-sudo cp ../../general/icon.png /home/$1/Pictures/icon.png
+sudo cp ./general/neon-background.jpg /usr/share/backgrounds/neon-background.jpg
+sudo cp ./general/icon.png /home/$1/Pictures/icon.png
 
-sudo cp ./saved_settings.dconf ../../
-sudo cp ./custom_bashrc ../../
+sudo cp ./_os/ubuntu/saved_settings.dconf ./
+sudo cp ./_os/ubuntu/custom_bashrc ./
 
 echo "Added cj icon to /home/$1/Pictures/icon.png. Set manually..."
