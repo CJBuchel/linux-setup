@@ -8,6 +8,9 @@ mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
 window-x=100
 window-y=127
 
+[com/system76/hidpi]
+mode='lodpi'
+
 [com/ubuntu/SoftwareProperties]
 goa-account-id='account_1615393844_0'
 
@@ -16,9 +19,12 @@ release-check-time=uint32 1615384866
 
 [io/elementary/appcenter/settings]
 last-refresh-time=int64 1629815693
+window-maximized=false
+window-position=(8, 964)
+window-size=(1184, 948)
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='power'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -92,6 +98,9 @@ report-technical-problems=true
 [org/gnome/desktop/screensaver]
 picture-uri='file:///usr/share/backgrounds/neon-background.jpg'
 
+[org/gnome/desktop/session]
+idle-delay=uint32 0
+
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=false
 theme-name='Yaru'
@@ -133,6 +142,9 @@ maximized=false
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
+[org/gnome/settings-daemon/plugins/power]
+power-button-action='interactive'
+
 [org/gnome/settings-daemon/plugins/xsettings]
 antialiasing='grayscale'
 hinting='slight'
@@ -151,7 +163,7 @@ manualhide=false
 active-hint=true
 gap-inner=uint32 1
 gap-outer=uint32 1
-hint-color-rgba='rgb(255,0,0)'
+hint-color-rgba='rgb(51,255,2)'
 tile-by-default=true
 
 [org/gnome/shell/extensions/user-theme]
@@ -179,8 +191,8 @@ use-transparent-background=true
 visible-name='cj-terminal'
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.16000000000000003, 0.41708185053380753, 1.0, 1.0), (0.0, 1.0, 0.0, 1.0), (0.54804270462633453, 1.0, 0.0, 1.0), (0.0, 0.39145907473309638, 1.0, 1.0), (0.0, 0.80392156862745101, 0.0, 1.0), (0.66666666666666663, 0.66666666666666663, 0.66666666666666663, 1.0)]
-selected-color=(true, 0.16000000000000003, 0.41708185053380753, 1.0, 1.0)
+custom-colors=[(0.20048780487804896, 1.0, 0.0066666666666667096, 1.0), (0.13725490196078433, 0.26666666666666666, 0.10588235294117647, 1.0), (0.13627520759193354, 0.26666666666666666, 0.10666666666666667, 1.0), (1.0, 0.0, 0.0, 1.0), (0.16000000000000003, 0.41708185053380753, 1.0, 1.0), (0.0, 1.0, 0.0, 1.0), (0.54804270462633453, 1.0, 0.0, 1.0), (0.0, 0.39145907473309638, 1.0, 1.0)]
+selected-color=(true, 0.20048780487804896, 1.0, 0.0066666666666667096, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
