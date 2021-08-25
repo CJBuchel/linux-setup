@@ -20,11 +20,21 @@ release-check-time=uint32 1615384866
 [io/elementary/appcenter/settings]
 last-refresh-time=int64 1629815693
 window-maximized=false
-window-position=(8, 964)
-window-size=(1184, 948)
+window-position=(23, 21)
+window-size=(384, 454)
+
+[org/gnome/Geary]
+compose-as-html=true
+folder-list-pane-position-horizontal=295
+formatting-toolbar-visible=false
+messages-pane-position=593
+migrated-config=true
+window-height=1150
+window-maximize=false
+window-width=1912
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='network'
 
 [org/gnome/deja-dup]
 backend='google'
@@ -57,6 +67,7 @@ show-weekdate=false
 [org/gnome/desktop/input-sources]
 current=uint32 0
 per-window=false
+show-all-sources=false
 sources=[('xkb', 'au')]
 xkb-options=@as []
 
@@ -71,7 +82,10 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager']
+application-children=['update-manager', 'io-elementary-appcenter', 'org-gnome-tweaks', 'discord', 'org-gnome-shell-extensions', 'org-gnome-evolution', 'org-gnome-geary']
+
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -85,6 +99,18 @@ application-id='gnome-printers-panel.desktop'
 [org/gnome/desktop/notifications/application/io-elementary-appcenter]
 application-id='io.elementary.appcenter.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-evolution]
+application-id='org.gnome.Evolution.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-geary]
+application-id='org.gnome.Geary.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-extensions]
+application-id='org.gnome.Shell.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
 
@@ -93,6 +119,7 @@ disable-while-typing=false
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
+disable-microphone=false
 report-technical-problems=true
 
 [org/gnome/desktop/screensaver]
@@ -105,12 +132,91 @@ idle-delay=uint32 0
 allow-volume-above-100-percent=false
 theme-name='Yaru'
 
+[org/gnome/desktop/wm/keybindings]
+maximize=@as []
+move-to-workspace-1=@as []
+unmaximize=['<Alt>F5']
+
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
+num-workspaces=1
 
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
+
+[org/gnome/evolution]
+version='3.40.0'
+
+[org/gnome/evolution/addressbook]
+completion-minimum-query-length=3
+completion-show-address=false
+
+[org/gnome/evolution/bogofilter]
+command=''
+utf8-for-spam-filter=true
+
+[org/gnome/evolution/calendar]
+prefer-new-item=''
+week-start-day-name='monday'
+work-day-friday=true
+work-day-monday=true
+work-day-saturday=false
+work-day-sunday=false
+work-day-thursday=true
+work-day-tuesday=true
+work-day-wednesday=true
+
+[org/gnome/evolution/mail]
+browser-close-on-reply-policy='ask'
+composer-show-from-override=false
+composer-visually-wrap-long-lines=false
+forward-style-name='attached'
+headers-collapsed=false
+image-loading-policy='never'
+junk-check-custom-header=true
+junk-check-incoming=true
+junk-empty-on-exit-days=0
+junk-lookup-addressbook=false
+paned-size=1490073
+reply-style-name='quoted'
+search-gravatar-for-photo=false
+to-do-bar-width=1319111
+trash-empty-on-exit-days=0
+
+[org/gnome/evolution/mail/composer-window]
+height=1164
+maximized=false
+width=954
+
+[org/gnome/evolution/mail/subscription-window]
+height=400
+maximized=false
+width=600
+
+[org/gnome/evolution/plugin/autocontacts]
+addressbook-source='system-address-book'
+gaim-addressbook-source='system-address-book'
+
+[org/gnome/evolution/plugin/prefer-plain]
+mode='normal'
+show-suppressed=true
+
+[org/gnome/evolution/shell]
+attachment-view=0
+buttons-visible=true
+default-component-id='mail'
+menubar-visible=true
+sidebar-visible=true
+statusbar-visible=true
+toolbar-visible=true
+
+[org/gnome/evolution/shell/window]
+height=1164
+maximized=false
+width=1912
+x=3764
+y=300
 
 [org/gnome/gedit/plugins]
 active-plugins=['spell', 'docinfo', 'modelines', 'filebrowser', 'time']
@@ -130,12 +236,20 @@ side-panel-size=200
 size=(900, 665)
 state=43908
 
+[org/gnome/mutter]
+dynamic-workspaces=false
+overlay-key='Super_L'
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=['<Primary><Super>KP_Left', '<Primary><Super>h', '<Primary><Super>Left']
+toggle-tiled-right=['<Primary><Super>KP_Right', '<Primary><Super>l', '<Primary><Super>Right']
+
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(1192, 910)
 maximized=false
 
 [org/gnome/nm-applet/eap/f17c19fd-50a9-4c9e-b447-8b8d8818dbcf]
@@ -150,14 +264,20 @@ antialiasing='grayscale'
 hinting='slight'
 
 [org/gnome/shell]
+command-history=['r']
 disable-user-extensions=false
-disabled-extensions=@as []
-enabled-extensions=['desktop-icons@csoriano', 'ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'pop-cosmic@system76.com']
+disabled-extensions=['cosmic-dock@system76.com']
+enabled-extensions=['desktop-icons@csoriano', 'ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com', 'pop-cosmic@system76.com', 'pop-shell@system76.com']
 favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop']
 
 [org/gnome/shell/extensions/dash-to-dock]
 extend-height=false
 manualhide=false
+
+[org/gnome/shell/extensions/gtile]
+action-move-down=['<Primary><Super>Down']
+action-move-up=['<Primary><Super>Up']
+show-toggle-tiling=['<Primary><Alt><Super>Return']
 
 [org/gnome/shell/extensions/pop-shell]
 active-hint=true
@@ -192,7 +312,7 @@ visible-name='cj-terminal'
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(0.20048780487804896, 1.0, 0.0066666666666667096, 1.0), (0.13725490196078433, 0.26666666666666666, 0.10588235294117647, 1.0), (0.13627520759193354, 0.26666666666666666, 0.10666666666666667, 1.0), (1.0, 0.0, 0.0, 1.0), (0.16000000000000003, 0.41708185053380753, 1.0, 1.0), (0.0, 1.0, 0.0, 1.0), (0.54804270462633453, 1.0, 0.0, 1.0), (0.0, 0.39145907473309638, 1.0, 1.0)]
-selected-color=(true, 0.20048780487804896, 1.0, 0.0066666666666667096, 1.0)
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -205,5 +325,5 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(694, 75)
+window-position=(1879, 364)
 window-size=(1203, 936)
