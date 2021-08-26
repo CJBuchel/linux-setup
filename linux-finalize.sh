@@ -1,17 +1,10 @@
 #!/bin/sh
 
-read -p "Have you booted into flat-remix? [y/n]: " flat
-
-if [ "$flat" = "y" ]
-then
 
 read -p "enter username e.g [cj]: " user
 
 # Load visual config
 echo "Setting flat-remix themes"
-
-
-
 dconf load / < saved_settings.dconf
 echo "Setting terminal theme"
 cat custom_bashrc > /home/$user/.bashrc
@@ -26,7 +19,3 @@ rm -r saved_settings.dconf
 rm -r custom_bashrc
 
 # sudo reboot
-
-else
-echo "Please boot into flat-remix then run again"
-fi
