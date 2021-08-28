@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# # Config setup
+# Config setup
 read -p "Select operating system (Ubuntu, Pop, other) [u/p/o]: " os
 read -p "Install basic libs [y/n]: " libs
 read -p "Install dev lib vendors (gradle/rails etc...) [y/n]: " vendors
@@ -62,10 +62,11 @@ else
 fi
 
 # opencv
-if [ "$opencv" = "y" ]
+if [ "$cv" = "y" ]
 then
 	echo "Getting OpenCV"
-	sudo wget -qO - https://github.com/CJBuchel/CJ-Vision/blob/master/bootstrap/openCV.sh?raw=1 | bash
+	# sudo wget -qO - https://github.com/wml-frc/CJ-Vision/blob/master/bootstrap/bootstrapLocal.sh?raw=1 | bash
+	sudo wget -qO - https://github.com/wml-frc/CJ-Vision/blob/master/bootstrap/openCV.sh?raw=1 | bash
 else
 	echo "Skipping openCV install"
 fi
